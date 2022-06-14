@@ -1,0 +1,7 @@
+<configs>
+
+<!-- book icons  -->
+    <set xpath="/items/item[@name='schematicMaster']/property[@name='ItemTypeIcon']/@value">book_unknown</set>
+    <set xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']/@value">book_known</set>
+
+</configs>
