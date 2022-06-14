@@ -1,0 +1,75 @@
+<recipes>
+<append xpath="/recipes">
+<recipe name="gunShotgunT0Blunderbuss" count="1" tags="perkBoomstick">
+<ingredient name="resourceMetalPipe" count="4"/>
+<ingredient name="resourceGlue" count="2"/>
+<ingredient name="resourceWood" count="6"/>
+</recipe>
+<recipe name="ammoBlunderbuss" count="1">
+<ingredient name="resourceRockSmall" count="1"/>
+<ingredient name="resourceGunPowder" count="2"/>
+<ingredient name="resourcePaper" count="1"/>
+</recipe>
+<recipe name="ammoBundleBlunderbuss" count="1" craft_time="240" tags="perkBoomstick,learnable">
+<ingredient name="resourceRockSmall" count="80"/>
+<ingredient name="resourceGunPowder" count="160"/>
+<ingredient name="resourcePaper" count="80"/>
+</recipe>
+<recipe name="TacticalHatchet" count="1" craft_area="workbench" tags="learnable, perkDeepCuts">
+<ingredient name="resourceForgedIron" count="25"/>
+<ingredient name="resourceScrapPolymers" count="15"/>
+<ingredient name="resourceGlue" count="3"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceLeather,resourceWood,resourceGlue"/>
+</effect_group>
+</recipe>
+<recipe name="TacticalAxe" count="1" craft_area="workbench" tags="learnable, perkMiner69r">
+<ingredient name="resourceForgedSteel" count="35"/>
+<ingredient name="resourceScrapPolymers" count="35"/>
+<ingredient name="resourceGlue" count="4"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceLeather,resourceWood,resourceGlue"/>
+</effect_group>
+</recipe>
+<recipe name="TacticalKnife" count="1" craft_area="workbench" tags="learnable, perkDeepCuts">
+<ingredient name="resourceForgedSteel" count="10"/>
+<ingredient name="resourceScrapPolymers" count="8"/>
+<ingredient name="resourceGlue" count="2"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceLeather,resourceWood,resourceGlue"/>
+</effect_group>
+</recipe>
+<recipe name="TacticalMachete" count="1" craft_area="workbench" tags="learnable, perkDeepCuts">
+<ingredient name="resourceForgedSteel" count="30"/>
+<ingredient name="resourceWood" count="10"/>
+<ingredient name="resourceGlue" count="2"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceCloth,resourceGlue"/>
+</effect_group>
+</recipe>
+<recipe name="Crowbar" count="1" craft_area="workbench" tags="learnable, perkPummelPete">
+<ingredient name="resourceForgedSteel" count="15"/>
+<ingredient name="resourceDuctTape" count="2"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceDuctTape"/>
+</effect_group>
+</recipe>
+<recipe name="Katana" count="1" craft_area="workbench" tags="learnable, perkDeepCuts">
+<ingredient name="resourceForgedSteel" count="40"/>
+<ingredient name="resourceCloth" count="10"/>
+<ingredient name="resourceGlue" count="1"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceCloth,resourceGlue"/>
+</effect_group>
+</recipe>
+<recipe name="Spear" count="1" craft_area="workbench" tags="learnable, perkJavelinMaster">
+<ingredient name="resourceForgedSteel" count="20"/>
+<ingredient name="resourceWood" count="55"/>
+<ingredient name="resourceLeather" count="5"/>
+<ingredient name="resourceGlue" count="2"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceLeather,resourceWood,resourceGlue"/>
+</effect_group>
+</recipe>
+</append>
+</recipes>

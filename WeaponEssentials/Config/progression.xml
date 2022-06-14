@@ -1,0 +1,12 @@
+<progression>
+<append xpath="/progression/perks/perk[@name='perkBoomstick']">
+<effect_group>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="ammoBundleBlunderbuss"/>
+</effect_group>
+</append>
+<append xpath="/progression/perks/perk[@name='perkShotgunMessiahDamage']">
+<effect_group>
+<passive_effect name='RecipeTagUnlocked' operation="base_set" level="1" value="1" tags="ammoBundleShotgunShell,ammoBundleShotgunSlug,ammoBundleShotgunBreachingSlug,ammoBundleBlunderbuss"/>
+</effect_group>
+</append>
+</progression>

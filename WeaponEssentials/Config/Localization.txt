@@ -1,0 +1,28 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+gunShotgunT0Blunderbuss,items,Gun,,,Blunderbuss,,,,,,,,,,,,,,
+gunShotgunT0BlunderbussDesc,items,Gun,,,A primitive muzzleloader can be crafted from mainly forged iron. Effective at very close ranges.\n\nRepair with Short Iron Pipe.\nScrap to Iron.,,",,,,,,,,,,,,,,
+ammoBlunderbuss,items,Ammo,,,Blunderbuss Ammo,,,,,,,,,,,,,,
+ammoBlunderbussDesc,items,Ammo,,,Blunderbuss ammo can be made with paper and gunpowder plus small rocks.,,",,,,,,,,,,,,,,
+ammoBundleBlunderbuss,items,Ammo,,,Box of Blunderbuss Ammo (100),,,,,,,,,,,,,,
+TacticalHatchetSchematic,items,perk book,Tactical Hatchet Schematic,,,,,,,,,,,,,,
+TacticalAxeSchematic,items,perk book,Tactical Axe Schematic,,,,,,,,,,,,,,
+TacticalKnifeSchematic,items,perk book,Tactical Knife Schematic,,,,,,,,,,,,,,
+TacticalMacheteSchematic,items,perk book,Tactical Machete Schematic,,,,,,,,,,,,,,
+TacticalAxe,items,Tool,Tactical Axe,,,,,,,,,,,,,,
+TacticalKnife,items,Tool,Tactical Knife,,,,,,,,,,,,,,
+TacticalMachete,items,Tool,Tactical Machete,,,,,,,,,,,,,,
+TacticalHatchet,items,Tool,Tactical Hatchet,,,,,,,,,,,,,,
+CrowbarSchematic,items,perk book,Crowbar Schematic,,,,,,,,,,,,,,
+KatanaSchematic,items,perk book,Katana Schematic,,,,,,,,,,,,,,
+SpearSchematic,items,perk book,Spear Schematic,,,,,,,,,,,,,,
+Crowbar,items,Tool,Crowbar,,,,,,,,,,,,,,
+Katana,items,Tool,Katana,,,,,,,,,,,,,,
+Spear,items,Tool,Spear,,,,,,,,,,,,,,
+gunMGT0PipeMachineGunDesc,items,Gun,,A home-made automatic weapon firing 9mm ammo.\n\nRepair with Short Iron Pipe.\nScrap to Iron.,,,,,,,,,,,,,,
+gunRifleT2LeverActionRifleDesc,items,Gun,,This Lever Action rifle uses .44 Mag ammo and is your first choice if you want to make that shot count.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,,,,,,,,,,
+
+
+
+
+
+

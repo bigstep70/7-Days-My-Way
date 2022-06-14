@@ -1,0 +1,34 @@
+<loot>
+<append xpath="//lootgroup[@name='groupAmmoRegularT0']">
+<item name="ammoBlunderbuss" prob="0.15" count="5,15"/>
+</append>
+<append xpath="//lootgroup[@name='groupWeaponsT0_Boomstick']">
+<item name="gunShotgunT0Blunderbuss" prob="0.15"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupToolsT1']">
+<item name="Crowbar"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Melee']">
+<item name="TacticalHatchet" />
+<item name="TacticalKnife" />
+<item name="TacticalMachete" />
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Melee']">
+<item name="TacticalAxe" />
+<item name="Katana"/>
+<item name="Spear" />
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsT1']">
+<item name="CrowbarSchematic"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']">
+<item name="TacticalHatchetSchematic"/>
+<item name="TacticalKnifeSchematic"/>
+<item name="TacticalMacheteSchematic"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+<item name="TacticalAxeSchematic"/>
+<item name="KatanaSchematic"/>
+<item name="SpearSchematic"/>
+</append>
+</loot>
