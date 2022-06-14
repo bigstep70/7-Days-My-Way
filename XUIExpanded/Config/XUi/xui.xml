@@ -1,0 +1,24 @@
+<xui>
+<!-- quest area timer -->
+<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+<window name="QuestAreaTimer" anchor="CenterCenter" />
+</append>
+<!-- toolbelt Slot Numbers -->
+<insertBefore xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']//window[@name='windowToolbelt']" >
+<window name="window_toolbeltSlotNumbers" />
+</insertBefore>
+<!-- menu time -->
+<append xpath="/xui/ruleset[@name='default']/window_group[@controller]" >
+<window name="window_menuTime" />
+</append>
+<append xpath="/xui/ruleset[@name='default']/window_group[@name='map']" >
+<window name="window_menuTime" />
+</append>
+<append xpath="/xui/ruleset[@name='default']/window_group[@name='players']" >
+<window name="window_menuTime" />
+</append>
+<!-- adds the combiner window to the workbench. -->
+<append xpath="/xui/ruleset/window_group[@name='workstation_workbench']">
+<window name="windowCombine"/>
+</append>
+</xui>

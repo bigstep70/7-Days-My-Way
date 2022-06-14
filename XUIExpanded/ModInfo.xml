@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+<ModInfo>
+<Name value="XUIExpanded"/>
+<Description value="More landclaims, zombies/animals, gametime/daylight hours, loot abundance and map sizes. Colored container states, compass-stats 'Air Temp/Wind Speed/Elevation', toolbelt numbers, clock to player menus (backpack/map, etc), the workbench combiner, a QuestArea countdown, remaining quest areas to clear, removes zombie dots from compass and enables the editor level-tools. New menu background."/>
+<Author value="bigstep70"/>
+<Version value="A20"/>
+<Website value="https://community.7daystodie.com/profile/25850-bigstep70/?tab=field_core_pfield_1"/>
+</ModInfo>
+</xml>
