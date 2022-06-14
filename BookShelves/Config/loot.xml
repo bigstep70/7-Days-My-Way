@@ -1,0 +1,27 @@
+<loot>
+<remove xpath="/lootcontainers/lootcontainer[@id='49']"/>
+<remove xpath="/lootcontainers/lootcontainer[@id='60']"/>
+<remove xpath="/lootcontainers/lootcontainer[@id='136']"/>
+<insertAfter xpath="/lootcontainers/lootcontainer[@id='48']">
+<!-- bookcase -->
+<lootcontainer id="49" name="bookcase" count="1,2" size="6,2" destroy_on_close="true" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
+<item name="resourcePaper" count="2,8" prob="0.1"/>
+<item group="groupBookcase" prob="0.9"/>
+</lootcontainer>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootcontainer[@id='59']">
+<!-- Bookstore bookcase -->
+<lootcontainer id="60" name="bookShelves" count="1,2" size="6,2" destroy_on_close="true" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
+<item name="resourcePaper" count="2,8" prob="0.1"/>
+<item group="groupCrackabookShelves" prob="0.9"/>
+</lootcontainer>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootcontainer[@id='135']">
+<!-- cntBookShelfSingleBottomFull01 etc. -->
+<lootcontainer id="136" name="crackabookShelves" count="1,2" size="6,2" destroy_on_close="true" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
+<item name="resourcePaper" count="2,8" prob="0.1"/>
+<item group="groupCrackabookShelves"/>
+<item name="resourcePaper" count="2,8" prob="7.5"/><!-- temp fix for excessive use of lootable bookshelves instead of random placers -->
+</lootcontainer>
+</insertAfter>
+</loot>

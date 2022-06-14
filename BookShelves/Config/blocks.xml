@@ -1,0 +1,16 @@
+<blocks>
+<remove xpath="/blocks/block[@name='cntBookcaseFull']/drop[@event='Destroy']"></remove>
+<insertBefore xpath="/blocks/block[@name='cntBookcaseFull']/property[@name='FilterTags']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookcaseEmpty" /></insertBefore>
+<append xpath="/blocks/block[@name='cntBookShelfSingleBottomFull01']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleBottomEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleBottomFull02']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleBottomEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleTopFull01']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleTopEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleTopFull02']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleTopEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleBottomFull01']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfDoubleBottomEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleBottomFull02']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfDoubleBottomEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleTopFull01']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfDoubleTopEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleTopFull02']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfDoubleTopEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleCapBottomFull01']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleCapBottomEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleCapBottomFull02']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleCapBottomEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleCapTopFull01']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleCapTopEmpty" /></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleCapTopFull02']"><drop event="Destroy" count="0" /><property name="DowngradeBlock" value="cntBookShelfSingleCapTopEmpty" /></append>
+</blocks>
