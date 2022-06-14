@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+<ModInfo>
+<Name value="CitiesPlusHoards"/>
+<Description value="Combines RWG BiggerCities mod and ImprovedHordes mod, plus addons Randomized/Bigger Hordes. Adds randomized HP to zombies base hit-point pool. Removes the twitchy looking zombie death animations and death moans."/>
+<Author value="bigstep70"/>
+<Version value="A20"/>
+<Website value="https://community.7daystodie.com/profile/25850-bigstep70/?tab=field_core_pfield_1"/>
+</ModInfo>
+</xml>

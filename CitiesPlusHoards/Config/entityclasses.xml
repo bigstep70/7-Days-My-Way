@@ -1,0 +1,214 @@
+<entityclasses>
+<!-- tag to separate zombie tiers/add random HP based on tiers -->
+<append xpath="/entity_classes/entity_class/property[@name='Tags' and contains(@value, 'walker') and not(contains(@value, 'feral')) and not(contains(@value, 'radiated'))]/@value">,slow</append>
+<append xpath="/entity_classes/entity_class/property[@name='Tags' and contains(@value, 'feral') and not(contains(@value, 'radiated'))]/@value">,fast</append>
+<append xpath="/entity_classes/entity_class/property[@name='Tags' and contains(@value, 'radiated')]/@value">,glowing</append>
+<!-- Tier 1 -->
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="one">
+<passive_effect name="HealthMax" operation="base_add" value="50">
+<requirement name="EntityTagCompare" target="self" tags="slow"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,20" operation="GTE" value="6"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="two">
+<passive_effect name="HealthMax" operation="base_add" value="50">
+<requirement name="EntityTagCompare" target="self" tags="slow"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,30" operation="GTE" value="12"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="three">
+<passive_effect name="HealthMax" operation="base_add" value="50">
+<requirement name="EntityTagCompare" target="self" tags="slow"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,40" operation="GTE" value="24"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="four">
+<passive_effect name="HealthMax" operation="base_add" value="50">
+<requirement name="EntityTagCompare" target="self" tags="slow"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,50" operation="GTE" value="36"/>
+</passive_effect>
+</effect_group>
+</append>
+<!-- Tier 2 -->
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="one">
+<passive_effect name="HealthMax" operation="base_add" value="100">
+<requirement name="EntityTagCompare" target="self" tags="fast"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,20" operation="GTE" value="6"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="two">
+<passive_effect name="HealthMax" operation="base_add" value="100">
+<requirement name="EntityTagCompare" target="self" tags="fast"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,30" operation="GTE" value="12"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="three">
+<passive_effect name="HealthMax" operation="base_add" value="100">
+<requirement name="EntityTagCompare" target="self" tags="fast"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,40" operation="GTE" value="24"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="four">
+<passive_effect name="HealthMax" operation="base_add" value="100">
+<requirement name="EntityTagCompare" target="self" tags="fast"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,50" operation="GTE" value="36"/>
+</passive_effect>
+</effect_group>
+</append>
+<!-- Tier 3 -->
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="one">
+<passive_effect name="HealthMax" operation="base_add" value="150">
+<requirement name="EntityTagCompare" target="self" tags="glowing"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,20" operation="GTE" value="6"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="two">
+<passive_effect name="HealthMax" operation="base_add" value="150">
+<requirement name="EntityTagCompare" target="self" tags="glowing"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,30" operation="GTE" value="12"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="three">
+<passive_effect name="HealthMax" operation="base_add" value="150">
+<requirement name="EntityTagCompare" target="self" tags="glowing"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,40" operation="GTE" value="24"/>
+</passive_effect>
+</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[contains (@name, 'zombie')]">
+<effect_group name="four">
+<passive_effect name="HealthMax" operation="base_add" value="150">
+<requirement name="EntityTagCompare" target="self" tags="glowing"/>
+<requirement name="RandomRoll" seed_type="Item" min_max="1,50" operation="GTE" value="36"/>
+</passive_effect>
+</effect_group>
+</append>
+<!-- Set the Zombie Death Sound to false -->
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Male/zombiemaledeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Female/zombiefemaledeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Female2/zombiefemale2death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Female/zombiefemaledeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBurnt']/property[@name='SoundDeath' and @value='Enemies/Burnt_Zombie/zombieburntdeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='SoundDeath' and @value='Enemies/Spider_Zombie/spiderdeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBoe']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Male2/zombiemale2death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Male2/zombiemale2death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieLab']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Female/zombiefemaledeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Female2/zombiefemale2death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Male2/zombiemale2death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieLumberjack']/property[@name='SoundDeath' and @value='Enemies/Snow_Zombie_Male/zombiemalesnowdeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Female2/zombiefemale2death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/property[@name='SoundDeath' and @value='Enemies/Acid_Puking_Hulk/hulkdeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='SoundDeath' and @value='Enemies/Acid_Puking_Hulk/hulkdeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSkateboarder']/property[@name='SoundDeath' and @value='zombiemaledeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Male2/zombiemale2death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='SoundDeath' and @value='Enemies/Feral_Zombie/zombieferaldeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='SoundDeath' and @value='Enemies/Base_Zombie_Female/zombiefemalescoutdeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='SoundDeath' and @value='demolitionzdeath']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']/property[@name='SoundDeath' and @value='crawler_death']/@value">Enemies/Burnt_Zombie/zombieburntpain</set>
+<!-- Set the Zombie Death Animation to false -->
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieJoe']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBoe']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieJanitor']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieLab']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieYo']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieLumberjack']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+<!-- Animals -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='SoundDeath' and @value='Animals/rabbitdeath']/@value">Enemies/Zombie_Dogs/zombieburntpain</set> -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='SoundDeath' and @value='wolfdeath']/@value">Enemies/Zombie_Dogs/zombieburntpain</set> -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='SoundDeath' and @value='wolfdeath']/@value">Enemies/Zombie_Dogs/zombieburntpain</set> -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='SoundDeath' and @value='Enemies/Zombie_Dogs/zombiedogdeath']/@value">Enemies/Zombie_Dogs/zombieburntpain</set> -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalBoar']/property[@name='SoundDeath' and @value='Animals/Boar/boardeath']/@value">Enemies/Zombie_Dogs/zombieburntpain</set> -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='HasDeathAnim' and @value='true']/@value">false</set> -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='HasDeathAnim' and @value='true']/@value">false</set> -->
+<!-- <set xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='HasDeathAnim' and @value='true']/@value">false</set> -->
+<!-- allows the animal hordes to work properly -->
+<remove xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='AITask-1']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='AITask-2']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='AITask-3']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='AITask-4']"/>
+<append xpath="/entity_classes/entity_class[@name='animalTemplateTimid']">
+<property name="AITask-1" value="ApproachSpot"/>
+<property name="AITask-2" value="RunawayWhenHurt"/>
+<property name="AITask-3" value="RunawayFromEntity" data="class=EntityPlayer,EntityZombie,EntityEnemyAnimal"/>
+<property name="AITask-4" value="Look"/>
+<property name="AITask-5" value="Wander"/>
+</append>
+<!-- same for rabbits/chickens -->
+<remove xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='AITask-1']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='AITask-2']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='AITask-3']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='AITask-4']"/>
+<append xpath="/entity_classes/entity_class[@name='animalRabbit']">
+<property name="AITask-1" value="ApproachSpot"/>
+<property name="AITask-2" value="RunawayWhenHurt"/>
+<property name="AITask-3" value="RunawayFromEntity" data="class=EntityPlayer,EntityZombie,EntityEnemyAnimal;safeDistance=20"/>
+<property name="AITask-4" value="Look"/>
+<property name="AITask-5" value="Wander"/>
+</append>
+<!-- zombies become static corpseBlocks on death. timestay/bodypoints adjusted-->
+<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieJoe']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieBoe']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieMoe']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieJanitor']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieBiker']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatCop']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteve']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieYo']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieSkateboarder']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieLumberjack']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieBusinessMan']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieSoldier']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieTomClark']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieBurnt']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieWightFeral']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieDemolition']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieMutated']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieScreamer']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieDarlene']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieLab']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieSpider']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieNurse']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombiePartyGirl']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieMarlene']" ><property name="CorpseBlock" value="goreBlockHumanCorpse2"/><property name="CorpseBlockChance" value="100"/></append>
+<append xpath="/entity_classes/entity_class[@name='zombieArlene']" ><property name="CorpseBlock" value="goreBlockHumanCorpse1"/><property name="CorpseBlockChance" value="100"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='DeadBodyHitPoints']/@value">500</set>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">300</set>
+</entityclasses>
