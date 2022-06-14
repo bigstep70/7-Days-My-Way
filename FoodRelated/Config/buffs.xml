@@ -1,0 +1,26 @@
+<buffs>
+<append xpath="/buffs">
+<!-- Adds Ice Buff -->
+<buff name="buffIce" name_key="buffElementFreezingName" description_key="buffElementFreezingDesc" tooltip_key="buffElementFreezingTooltip" icon="ui_game_symbol_cold" icon_color="255,255,255" icon_blink="false">
+<damage_type value="cold"/>
+<stack_type value="duration"/>
+<duration value="12,0"/>
+<effect_group>
+<passive_effect name="BuffBlink" operation="base_set" value="2" duration="12,0" tags="buffElementFreezing"/>
+<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffElementCold"/>
+<passive_effect name="FoodChangeOT" operation="perc_add" value=".6"/>
+<passive_effect name="FoodChangeOT" operation="perc_add" value="-.09">
+<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="1"/></passive_effect>
+<passive_effect name="FoodChangeOT" operation="perc_add" value="-.18">
+<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="GTE" value="2"/></passive_effect>
+<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="2"/>
+<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.3">
+<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="1"/></passive_effect>
+<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.6">
+<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="GTE" value="2"/></passive_effect>
+<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Cold2"/>
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Cold2"/>
+</effect_group>
+</buff>
+</append>
+</buffs>

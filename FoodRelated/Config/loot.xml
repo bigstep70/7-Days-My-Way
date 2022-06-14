@@ -1,0 +1,28 @@
+<loot>
+<!-- Ice Machine loot - cntIceMachine-->
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupAirDrop01']">
+<lootgroup name="groupice" count="all">
+<item name="foodIcePack" count="0,2" loot_prob_template="veryLow"/>
+<item name="resourceSnowBall" count="0,5" loot_prob_template="veryLow"/>
+</lootgroup>
+</insertAfter>
+<append xpath="/lootcontainers">
+<lootcontainer id="888" name="IceMachine" count="1,2" size="6,5" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualPlus1Template">
+<item group="groupice"/>
+</lootcontainer>
+</append>
+<!-- adds MRE to a few lootgroups -->
+<append xpath="/lootcontainers/lootgroup[@name='groupFoodPileCommon']"><item name="foodMRE" count="1" loot_prob_template="low"/></append>
+<append xpath="/lootcontainers/lootgroup[@name='groupFoodUncommon']"><item name="foodMRE" count="1" loot_prob_template="low"/></append>
+<!-- adds MRE to Air Drops -->
+<append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']"><item name="foodMRE" count="1,2" loot_prob_template="med"/></append>
+<!-- Adjusted probability of Pots and Grills inside cupboards and ovens (default=25%) -->
+<append xpath="/lootcontainers/lootgroup[@name='groupOven']"><item name="toolCookingPot" prob=".20"/></append>
+<append xpath="/lootcontainers/lootgroup[@name='groupOven']"><item name="toolCookingGrill" prob=".30"/></append>
+<append xpath="/lootcontainers/lootgroup[@name='groupCupboard02']"><item name="toolCookingPot" prob=".30"/></append>
+<append xpath="/lootcontainers/lootgroup[@name='groupCupboard02']"><item name="toolCookingGrill" prob=".20"/></append>
+<!-- O2 tablets -->
+<append xpath="/lootcontainers/lootgroup[@name='survivalMedical']"><item name="medicalO2Tablets" count="1,2" loot_prob_template="low"/></append>
+<append xpath="/lootcontainers/lootgroup[@name='groupMedicalUncommon']"><item name="medicalO2Tablets" loot_prob_template="low"/></append>
+<append xpath="/lootcontainers/lootgroup[@name='groupMedicalRare']"><item name="medicalO2Tablets" loot_prob_template="veryLow"/></append>
+</loot>

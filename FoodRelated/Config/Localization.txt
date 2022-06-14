@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+foodIcePack,items,Food,,,Pack of Ice,,,,,,,,,,,,,,
+foodIcePackDesc,items,Food,,,A bag of crushed ice.\nCan be eaten but prepair yourself for brain freeze.\nCan be melted into Boiled Water at the campfire.,,,,,,,,,,,,,,
+foodMRE,items,Food,,,Military Rations (MRE),Military Rations (MRE),,,,,,,,,,,,,
+foodMREDesc,items,Food,,,"An instant meal issued to hungry soldiers.\nDosn't taste the greatest but sure is filling","An instant meal issued to hungry soldiers.\nDosn't taste the greatest but sure is filling",,,,,,,,,,,,,
+medicalO2Tablets,items,Food,,,Water Purification Tablets,,,,,,,,,,,,,,
+medicalO2TabletsDesc,items,Food,,,Generic brand water purification tablets.\nTakes a while but makes putrid, stagnant water safe to drink.,,,,,,,,,,,,,,
+drinkJarPurifiedWater,items,Food,,,Purified Water,,,,,,,,,,,,,,
+drinkJarPurifiedWaterDesc,items,Food,,,Water that is treated with purification tablets.\nTastes a little funny but is completely safe to drink.,,,,,,,,,,,,,,

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<ModInfo>
+<Name value="FoodRelated"/>
+<Description value="Find Bags of Ice in ice machines. Food saity values adjusted to x1.5. Render rotten meat to give animal fat. Adds an MRE (military ration) to the trader, food/loot/airdrops. Adjusted Pots/Grills spawning in ovens and cupboards. Pick up harvestable plants with E (interact)."/>
+<Author value="bigstep70"/>
+<Version value="A20"/>
+<Website value="https://community.7daystodie.com/profile/25850-bigstep70/?tab=field_core_pfield_1"/>
+</ModInfo>
+</xml>

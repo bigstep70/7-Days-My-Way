@@ -1,0 +1,33 @@
+<blocks>
+<!-- Ice Machine lootable -->
+<append xpath="/blocks/block[@name='cntIceMachine']">
+<property name="Class" value="Loot"/>
+<property name="Material" value="Mmetal_weak"/>
+<property name="LootList" value="IceMachine"/>
+<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+<property name="Group" value="Decor/Miscellaneous"/>
+<property name="FilterTags" value="MC_building,SC_electrical,SC_loot"/>
+</append>
+<!-- pick up plants/crops with (E) interact button -->
+<append xpath="/blocks/block[contains(@name,'plantedCornDead') and not(contains(@name,'Player'))]"><property name="Class" value="CropsGrown"/><drop event="Harvest" name="resourceYuccaFibers" count="12"/></append>
+<append xpath="/blocks/block[@name='plantedCorn3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedGraceCorn3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[contains(@name,'plantedSnowberry1') and not(contains(@name,'Player'))]"><property name="Class" value="CropsGrown"/><drop event="Harvest" name="resourceYuccaFibers" count="5"/></append>
+<append xpath="/blocks/block[contains(@name,'plantedSnowberry2') and not(contains(@name,'Player'))]"><property name="Class" value="CropsGrown"/><drop event="Harvest" name="resourceYuccaFibers" count="5"/></append>
+<append xpath="/blocks/block[contains(@name,'plantedCotton1') and not(contains(@name,'Player'))]"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[contains(@name,'plantedCotton2') and not(contains(@name,'Player'))]"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedCotton3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[contains(@name,'plantedCotton3Harvest') and not(contains(@name,'Player'))]"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='mushroom01']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='mushroom02']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedMushroom3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedYucca3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedCoffee3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedGoldenrod3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedAloe3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedBlueberry3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedPotato3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedHop3Harvest']"><property name="Class" value="CropsGrown"/></append>
+<append xpath="/blocks/block[@name='plantedPumpkin3Harvest']"><property name="Class" value="CropsGrown"/></append>
+</blocks>

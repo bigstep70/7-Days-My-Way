@@ -1,0 +1,19 @@
+<recipes>
+<append xpath="/recipes">
+<!-- bag of ice -->
+<recipe name="drinkJarBoiledWater" count="10" craft_time="100" craft_area="campfire">
+<ingredient name="drinkJarEmpty" count="10"/>
+<ingredient name="foodIcePack" count="1"/>
+</recipe>
+<!-- render rotten flesh to animalfat -->
+<recipe name="resourceAnimalFat" count="1" craft_time="100" craft_area="campfire" craft_tool="toolCookingPot">
+<ingredient name="foodRottingFlesh" count="10"/>
+<ingredient name="drinkJarRiverWater" count="5"/>
+</recipe>
+<!-- purified water via O2 tablets -->
+<recipe name="drinkJarPurifiedWater" count="1" craft_time="100">
+<ingredient name="medicalO2Tablets" count="1"/>
+<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+</append>
+</recipes>
