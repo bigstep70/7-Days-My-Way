@@ -1,0 +1,13 @@
+<buffs>
+<append xpath="/buffs">
+<buff name="buffMaximumhealth" name_key="buffMaximumhealthName" description_key="buffMaximumhealthDesc" icon="ui_game_symbol_pills" hidden="true">
+<stack_type value="replace"/>
+<duration value="1"/>
+<display_value value=".buffMaximumhealthDisplay"/>
+<display_value_format value="time"/>
+<effect_group>
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="100"/>
+</effect_group>
+</buff>
+</append>
+</buffs>

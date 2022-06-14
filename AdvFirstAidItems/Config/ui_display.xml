@@ -1,0 +1,12 @@
+<ui_display>
+<insertAfter xpath="/ui_display_info/item_display/item_display_info[@display_type='medicalFirstAidKit']">
+<item_display_info display_type="AdvancedFirstAidKit" display_group="groupConsumables">
+<display_entry name="InstantHealth" title_key="statInstantHealth"/>
+<display_entry name="dhealAbrasionMult" title_key="statHealAbrasionMult" display_type="Percent"/>
+<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
+<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
+<display_entry name="dClosedFracture" title_key="statClosedFracture" display_type="Percent"/>
+<display_entry name="dfatigue" title_key="statfatigue" display_type="Percent"/>
+</item_display_info>
+</insertAfter>
+</ui_display>

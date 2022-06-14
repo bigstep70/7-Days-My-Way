@@ -1,0 +1,76 @@
+<recipes>
+<append xpath="/recipes">
+<recipe name="resourceSewingNeedle" count="10" scrapable="True" craft_area="forge" craft_tool="toolAnvil" craft_time="75" tags="perkLightArmor,perkAdvancedEngineering">
+<ingredient name="unit_iron" count="1"/>
+<ingredient name="unit_clay" count="1"/>
+</recipe>
+<recipe name="medicalAdvancedFirstAidBandage" count="1" craft_time="5" tags="perkPhysician,learnable">
+<ingredient name="medicalAloeCream" count="2"/>
+<ingredient name="medicalBandage" count="1"/>
+<ingredient name="drugPainkillers" count="1"/>
+</recipe>
+<recipe name="medicalAdvancedFirstAidKit" count="1" craft_time="5" tags="perkPhysician,learnable">
+<ingredient name="medicalSplint" count="1"/>
+<ingredient name="drugPainkillers" count="2"/>
+<ingredient name="medicalIsopropyl" count="2"/>
+<ingredient name="medicalFirstAidBandage" count="2"/>
+<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+<recipe name="resourceSewingKit" count="1" craft_area="workbench" tags="workbenchCrafting">
+<ingredient name="resourceSewingNeedle" count="1"/>
+<ingredient name="resourceLeather" count="10"/>
+<ingredient name="resourceCloth" count="10"/>
+</recipe>
+<recipe name="foodPumpkinCheesecake" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+<ingredient name="foodCropPumpkin" count="1"/>
+<ingredient name="foodEgg" count="2"/>
+<ingredient name="foodCornMeal" count="2"/>
+<ingredient name="resourceAnimalFat" count="1"/>
+<ingredient name="drinkJarGrainAlcohol" count="1"/>
+</recipe>
+<recipe name="drugRecog" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+<ingredient name="resourceAcid" count="1"/>
+<ingredient name="medicalIsopropyl" count="1"/>
+<ingredient name="drugVitamins" count="2"/>
+<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+</recipe>
+<recipe name="drugSteroids" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+<ingredient name="resourceAcid" count="1"/>
+<ingredient name="medicalIsopropyl" count="1"/>
+<ingredient name="resourceTestosteroneExtract" count="2"/>
+<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+</recipe>
+<recipe name="drinkJarGrandpasMoonshine" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+<ingredient name="foodCornOnTheCob" count="5"/>
+<ingredient name="foodCornMeal" count="5"/>
+<ingredient name="drinkJarGrainAlcohol" count="1"/>
+<ingredient name="resourceAcid" count="1"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCornMeal,foodCornOnTheCob"/>
+</effect_group>
+</recipe>
+<recipe name="drugFortBites" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+<ingredient name="resourceBone" count="20"/>
+<ingredient name="medicalBloodBag" count="5"/>
+<ingredient name="drinkJarGrainAlcohol" count="1"/>
+<ingredient name="drugVitamins" count="1"/>
+</recipe>
+<recipe name="drinkJarGrainAlcohol" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+<ingredient name="foodCornMeal" count="1"/>
+<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+<recipe name="drinkJarGrainAlcohol" count="1" craft_area="campfire" craft_tool="toolBeaker">
+<ingredient name="foodCornMeal" count="2"/>
+<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="medicalIsopropyl" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+<ingredient name="drinkJarGrainAlcohol" count="5"/>
+<ingredient name="drinkJarBoiledWater" count="1"/>
+<ingredient name="resourceAcid" count="1"/>
+<effect_group>
+<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="drinkJarGrainAlcohol,resourcePotassiumNitratePowder"/>
+</effect_group>
+</recipe>
+</append>
+</recipes>
