@@ -1,0 +1,4 @@
+﻿<configs>
+	<set xpath="/controls/response_entry/rect/@width">1000</set>
+	<set xpath="/controls/response_entry/rect/label/@width">994</set>
+</configs>

@@ -1,0 +1,15 @@
+<buffs>
+<append xpath="/buffs">
+<buff name="wearAviatorGoggles" name_key="wearAviatorGogglesName" description_key="wearAviatorGogglesDesc" icon="apparelAviatorGoggles"></buff>
+<buff name="wearNerdGlasses" name_key="wearNerdGlassesName" description_key="wearNerdGlassesDesc" icon="apparelNerdGlasses"></buff>
+<buff name="wearShades" name_key="wearShadesName" description_key="wearShadesDesc" icon="apparelShades"></buff>
+<buff name="wearToughGuySunglasses" name_key="wearToughGuySunglassesName" description_key="wearToughGuySunglassesDesc" icon="apperalToughGuySunglasses"></buff>
+<buff name="wearSkiGoggles" name_key="wearSkiGogglesName" description_key="wearSkiGogglesDesc" icon="apparelSkiGoggles"></buff>
+<buff name="wearNightvisionGoggles" name_key="wearNightvisionGogglesName" description_key="wearNightvisionGogglesDesc" icon="apperalNightvisionGoggles"></buff>
+<buff name="wearRunningShoesRegular" name_key="wearRunningShoesRegularName" description_key="wearRunningShoesRegularDesc" icon="apperalRunningShoesRegular"></buff>
+<buff name="wearCoatJacketLetterZU" name_key="wearCoatJacketLetterZUName" description_key="wearCoatJacketLetterZUDesc" icon="apperalCoatJacketLetterZU"></buff>
+<buff name="wearCigar" name_key="wearCigarName" description_key="wearCigarDesc" icon="apperalCigar"></buff>
+<buff name="headLightActive" name_key="headLightActiveName" description_key="headLightActiveDesc" icon="modArmorHelmetLight"></buff>
+<buff name="weaponLightActive" name_key="weaponLightActiveName" description_key="weaponLightActiveDesc" icon="modGunFlashlight"></buff>
+</append>
+</buffs>

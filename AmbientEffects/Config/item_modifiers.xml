@@ -1,0 +1,10 @@
+<item_modifiers>
+<append xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/effect_group" >
+<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="headLightActive"/>
+<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="headLightActive"/>
+</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/effect_group" >
+<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="weaponLightActive"/>
+<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="weaponLightActive"/>
+</append>
+</item_modifiers>

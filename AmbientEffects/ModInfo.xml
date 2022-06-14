@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<ModInfo>
+<Name value="AmbientEffects"/>
+<Description value="Unlocks open-locked doors, making them closable. Ulock doors using lockpicks. Skills level with use (harvesting, shooting, etc...). Adds apperal based buff indicators. Adds POI name to quest list. MapToolz."/>
+<Author value="bigstep70"/>
+<Version value="A20"/>
+<Website value="https://community.7daystodie.com/profile/25850-bigstep70/?tab=field_core_pfield_1"/>
+</ModInfo>
+</xml>

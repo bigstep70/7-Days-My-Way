@@ -1,0 +1,9 @@
+<windows>
+<set xpath="/windows/window[@name='windowSkillPerkInfo']/@hidden_entries_with_paging">0</set>
+<set xpath="/windows/window[@name='windowSkillPerkInfo']/rect/rect[@name='pagerBox']/@pos">3,-678</set>
+<set xpath="/windows/window[@name='windowResponses'][@pos='-650,0']/@pos">-1000,0</set>
+<set xpath="/windows/window[@name='windowResponses']/@width">1000</set>
+<setattribute xpath="/windows/window[@name='windowResponses']/sprite" name="color">0,128,0,255</setattribute>
+<set xpath="/windows/window[@name='windowResponses']/grid/@width">990</set>
+<set xpath="/windows/window[@name='windowResponses']/grid/@cell_width">990</set>
+</windows>
