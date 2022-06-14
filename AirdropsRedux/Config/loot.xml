@@ -1,0 +1,361 @@
+<loot>
+<insertAfter xpath="lootcontainers/lootgroup[@name='groupAirDrop']">
+<!--Primary Food -->
+<lootgroup name="SupplyFood" count="1,3">
+<item name="foodBaconAndEggs" count="1,3"/>
+<item name="foodVegetableStew" count="1,2"/>
+<item name="foodChiliDog" count="1,2"/>
+<item name="foodFishTacos" count="1,2"/>
+<item name="foodHoboStew" count="1,3"/>
+<item name="foodShamChowder" count="1,2"/>
+<item name="foodMeatStew" count="1,2"/>
+<item name="foodSteakAndPotato" count="1,2"/>
+<item name="foodTunaFishGravyToast" count="1,2"/>
+<item name="foodShepardsPie" count="1,2"/>
+<item name="foodGumboStew" count="1,2"/>
+<item name="foodSpaghetti"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyFood']">
+<!--Secondary Food -->
+<lootgroup name="SupplyDrink" count="1,3">
+<item name="drinkJarBeer" count="1,3"/>
+<item name="drinkJarBlackStrapCoffee" count="1,3"/>
+<item name="drinkJarPureMineralWater" count="1,2"/>
+<item name="drinkJarGoldenRodTea" count="1,3"/>
+<item name="drinkJarRedTea" count="1,3"/>
+<item name="drinkYuccaJuiceSmoothie" count="1,3"/>
+<item name="drinkCanMegaCrush" count="1,2"/>
+<item name="drinkJarYuccaJuice" count="1,3"/>
+<item name="drinkJarBoiledWater" count="1,5"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyDrink']">
+<!--Primary Medical -->
+<lootgroup name="SupplyMedical" count="1,5">
+<item name="medicalAloeCream" count="1,4"/>
+<item name="foodHoney" count="1,4"/>
+<item name="drugVitamins" count="1,4"/>
+<item name="medicalBandage" count="1,4"/>
+<item name="drinkJarBoiledWater" count="1,4"/>
+<item name="medicalBloodBag" count="1,4"/>
+<item name="drugHerbalAntibiotics" count="1,4"/>
+<item name="drugPainkillers" count="1,4"/>
+<item name="medicalFirstAidBandage" count="1,4"/>
+<item name="medicalSplint" count="1,4"/>
+<item name="medicalPlasterCast" count="1,2"/>
+<item name="medicalFirstAidKit" count="1,2"/>
+<item name="drugAntibiotics" count="1,3"/>
+<item name="drinkJarGrandpasLearningElixir" count="1"/>
+<item name="drinkJarGrandpasForgettingElixir" count="1"/>
+<item name="drinkJarGrandpasAwesomeSauce" count="1"/>
+<item name="drinkJarGrandpasMoonshine" count="1"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyMedical']">
+<!--Primary (1/2) Weapons and Armor -->
+<lootgroup name="SupplyWeapons" count="1,2">
+<item group="groupWeaponsAllScaled"/>
+<item group="groupWeaponsRangedScaled"/>
+<item group="groupWeaponsAllScaledTPlus"/>
+<item group="groupWeaponsRangedScaledTPlus"/>
+<item group="groupWeaponsMeleeScaled"/>
+<item group="groupWeaponsMeleeScaledTPlus"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyWeapons']">
+<!--Primary (2/2) Weapons and Armor -->
+<lootgroup name="SupplyArmor" count="1,2">
+<item group="groupArmorScaled"/>
+<item group="groupArmorScaled"/>
+<item group="groupArmorScaled"/>
+<item group="groupArmorScaledTPlus"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyArmor']">
+<!--Secondary Weapons and Armor -->
+<lootgroup name="SupplyMods" count="1,2">
+<item group="modArmorCosmetics"/>
+<item group="modArmorCosmetics"/>
+<item group="groupModAllT1"/>
+<item group="groupModAllT1"/>
+<item group="groupModAllT2"/>
+<item group="groupModAllT2"/>
+<item group="groupModAllT3"/>
+<item group="groupModAllScaled"/>
+<item group="groupModAllScaled"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyMods']">
+<!--Primary Tools and Materials -->
+<lootgroup name="SupplyMaterialBundles" count="1,2">
+<item name="resourceRockSmallBundle" count="1,2"/>
+<item name="resourceWoodBundle" count="1,2"/>
+<item name="resourceScrapIronBundle" count="1,2"/>
+<item name="resourcePotassiumNitratePowderBundle" count="1,2"/>
+<item name="resourceLeadBundle" count="1,2"/>
+<item name="resourceCoalBundle"/>
+<item name="resourceOilShaleBundle"/>
+<item name="casinoCoin" count="1000,2000"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyMaterialBundles']">
+<!--Secondary (1of2) Tools and Materials -->
+<lootgroup name="SupplyMaterials" count="1,2">
+<item name="resourceScrapBrass" count="100,350"/>
+<item name="resourceFeather" count="10,60"/>
+<item name="resourceGunPowder" count="10,400"/>
+<item name="resourceNail" count="10,20"/>
+<item name="resourceGlue" count="1,10"/>
+<item name="resourceBulletCasing" count="25,75"/>
+<item name="resourceDuctTape" count="1,5"/>
+<item name="resourceScrapPolymers" count="10,60"/>
+<item name="resourceLockPick" count="10,20"/>
+<item name="resourceSewingKit" count="1,5"/>
+<item name="resourceScrapIron" count="100,250"/>
+<item name="resourceClayLump" count="250,450"/>
+<item name="casinoCoin" count="100,500"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyMaterials']">
+<!--Secondary (2of2) Tools and Materials -->
+<lootgroup name="SupplyTools" count="1,2">
+<item group="workstationToolsScaled"/>
+<item name="resourceRepairKit" count="1,5"/>
+<item name="resourceLockPick" count="1,5"/>
+<item name="meleeToolSalvageT1Wrench"/>
+<item name="meleeToolRepairT1ClawHammer"/>
+<item name="meleeToolRepairT3Nailgun"/>
+<item name="meleeToolAxeT1IronFireaxe"/>
+<item name="meleeToolPickT1IronPickaxe"/>
+<item name="meleeToolShovelT1IronShovel"/>
+<item name="meleeToolAxeT2SteelAxe"/>
+<item name="meleeToolPickT2SteelPickaxe"/>
+<item name="meleeToolShovelT2SteelShovel"/>
+<item name="meleeToolAxeT3Chainsaw"/>
+<item name="meleeToolPickT3Auger"/>
+<item name="meleeToolSalvageT2Ratchet"/>
+<item name="meleeToolSalvageT3ImpactDriver"/>
+<item name="meleeToolPaintTool" />
+<item name="meleeToolWireTool"/>
+<item name="meleeToolAxeT1IronFireaxe"/>
+<item name="meleeToolPickT1IronPickaxe"/>
+<item name="meleeToolShovelT1IronShovel"/>
+<item name="meleeToolSalvageT2Ratchet"/>
+<item name="meleeToolPickT2SteelPickaxe"/>
+<item name="meleeToolShovelT2SteelShovel"/>
+<item group="workstationToolsScaled"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyTools']">
+<!--Primary Ammo -->
+<lootgroup name="SupplyAmmoBundles" count="1">
+<item name="ammoBundle9mmBulletBall" count="1"/>
+<item name="ammoBundle9mmBulletHP" count="1"/>
+<item name="ammoBundle9mmBulletAP" count="1"/>
+<item name="ammoBundle44MagnumBulletBall" count="1"/>
+<item name="ammoBundle44MagnumBulletHP" count="1"/>
+<item name="ammoBundle44MagnumBulletAP" count="1"/>
+<item name="ammoBundle762mmBulletBall" count="1"/>
+<item name="ammoBundle762mmBulletHP" count="1"/>
+<item name="ammoBundle762mmBulletAP" count="1"/>
+<item name="ammoBundleShotgunShell" count="1"/>
+<item name="ammoBundleShotgunSlug" count="1"/>
+<item name="ammoBundleShotgunBreachingSlug" count="1"/>
+<item name="ammoBundleArrowIron" count="1"/>
+<item name="ammoBundleArrowSteelAP" count="1"/>
+<item name="ammoBundleCrossbowBoltIron" count="1"/>
+<item name="ammoBundleCrossbowBoltSteelAP" count="1"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyAmmoBundles']">
+<!--Secondary Ammo -->
+<lootgroup name="SupplyAmmo" count="1,5">
+<item name="ammo9mmBulletBall" count="25,125"/>
+<item name="ammo9mmBulletHP" count="25,125"/>
+<item name="ammo9mmBulletAP" count="25,125"/>
+<item name="ammo44MagnumBulletBall" count="25,125"/>
+<item name="ammo44MagnumBulletHP" count="25,125"/>
+<item name="ammo44MagnumBulletAP" count="25,125"/>
+<item name="ammo762mmBulletBall" count="25,125"/>
+<item name="ammo762mmBulletHP" count="25,125"/>
+<item name="ammo762mmBulletAP" count="25,125"/>
+<item name="ammoShotgunShell" count="10,50"/>
+<item name="ammoShotgunSlug" count="10,50"/>
+<item name="ammoShotgunBreachingSlug" count="10,50"/>
+<item name="ammoRocketHE" count="1,15"/>
+<item name="ammoRocketFrag" count="1,15"/>
+<item name="ammoGasCan" count="500,2000"/>
+<item name="ammoArrowFlaming" count="10,50"/>
+<item name="ammoArrowExploding" count="10,50"/>
+<item name="ammoCrossbowBoltFlaming" count="10,50"/>
+<item name="ammoCrossbowBoltExploding" count="10,50"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyAmmo']">
+<!--1of2 Primary canned food and reading material -->
+<lootgroup name="SupplySchematics" count="1,2">
+<item group="schematicsModsAndGeneralCommon"/>
+<item group="schematicsModsAndGeneralRare"/>
+<item group="schematicsToolsCommon"/>
+<item group="schematicsToolsRare"/>
+<item group="schematicsWeaponsArmorCommon"/>
+<item group="schematicsWeaponsArmorRare"/>
+<item group="schematicsVehiclesCommon"/>
+<item group="schematicsVehiclesRare"/>
+<item group="farmingCookingRecipesCommon"/>
+<item group="farmingCookingRecipesRare"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplySchematics']">
+<!--2of2 Primary canned food and reading material -->
+<lootgroup name="SupplyPerkBooks" count="1,2">
+<item group="perkBooks"/>
+<item group="perkBooks"/>
+<item group="perkBooks"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyPerkBooks']">
+<!--Secondary Parts and Vehicle -->
+<lootgroup name="SupplyParts" count="1,4">
+<item group="toolParts"/>
+<item name="gunMGT1AK47Parts" count="1,3"/>
+<item name="gunHandgunT1PistolParts" count="1,3"/>
+<item name="gunBowT1WoodenBowParts" count="1,3"/>
+<item name="gunRifleT1HuntingRifleParts" count="1,3"/>
+<item name="gunShotgunT1DoubleBarrelParts" count="1,3"/>
+<item name="gunExplosivesT3RocketLauncherParts" count="1,3"/>
+<item name="gunBotRoboticsParts" count="1,3"/>
+<item name="meleeWpnBatonT2StunBatonParts" count="1,3"/>
+<item name="meleeWpnBladeT3MacheteParts" count="1,3"/>
+<item name="meleeWpnSpearT3SteelSpearParts" count="1,3"/>
+<item name="meleeWpnClubT3SteelClubParts" count="1,3"/>
+<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="1,3"/>
+<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="1,3"/>
+<item name="meleeToolAxeT3ChainsawParts" count="1,3"/>
+<item name="meleeToolAllSteelParts" count="1,3"/>
+<item name="armorMilitarySetParts" count="1,3"/>
+<item name="carBattery" count="1"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyParts']">
+<!--Primary Parts and Vehicle -->
+<lootgroup name="SupplyAutomotive" count="1,2">
+<item group="SupplyParts"/>
+<item name="vehicleBicycleChassis"/>
+<item name="vehicleBicycleHandlebars"/>
+<item name="vehicleWheels" count="1,2"/>
+<item name="vehicleMinibikeChassis"/>
+<item name="vehicleMinibikeHandlebars"/>
+<item name="vehicleMotorcycleChassis"/>
+<item name="vehicleMotorcycleHandlebars"/>
+<item name="smallEngine" count="1"/>
+<item name="carBattery" count="1"/>
+<item name="generatorbank"/>
+<item name="ammoGasCan" count="500,1000"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyAutomotive']">
+<!--Generic -->
+<lootgroup name="SupplyGenericClothes" count="1,3">
+<item group="groupApparelShirtLong"/>
+<item group="groupApparelPants"/>
+<item group="groupApparelSuit"/>
+<item group="groupApparelFaceCover"/>
+<item group="groupApparelShoesAll"/>
+<item name="apparelCoatLeatherPoncho"/>
+<item name="apparelCoatPufferCoat"/>
+<item name="apparelSkullCap"/>
+<item name="apparelSweatshirt"/>
+<item name="apparelFlannelShirt"/>
+<item name="apparelOveralls"/>
+<item name="apparelCoatLeatherDuster"/>
+<item name="apparelWornBoots"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyGenericClothes']">
+<!--Medical Supply Drop-->
+<lootgroup name="SupplyMedicalDrop" count="all">
+<item group="SupplyMedical"/>
+<item group="seeds" count="1,5"/>
+<item group="cannedfood" count="1,4"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyMedicalDrop']">
+<!--Cooked Food Drop-->
+<lootgroup name="SupplyFoodDrop" count="all">
+<item group="SupplyFood"/>
+<item group="SupplyDrink"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyFoodDrop']">
+<!--Weapons and Armor-->
+<lootgroup name="SupplyWeaponsArmorDrop" count="all">
+<item group="SupplyWeapons"/>
+<item group="SupplyArmor"/>
+<item group="SupplyMods"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyWeaponsArmorDrop']">
+<!--Tools and Materials Drop-->
+<lootgroup name="SupplyMaterialsToolsDrop" count="2">
+<item group="SupplyTools"/>
+<item group="SupplyMaterials"/>
+<item group="SupplyMaterialBundles"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyMaterialsToolsDrop']">
+<!--Ammo drop-->
+<lootgroup name="SupplyAmmoDrop" count="all">
+<item group="SupplyAmmoBundles"/>
+<item group="SupplyAmmo"/>
+<item group="SupplyMods"/>
+</lootgroup>
+</insertAfter>
+<!--Parts and Vehicle Drops-->
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyAmmoDrop']">
+<lootgroup name="SupplyAutomotiveDrop" count="all">
+<item group="SupplyAutomotive"/>
+<item group="SupplyParts"/>
+</lootgroup>
+</insertAfter>
+<!--Generic Supply -->
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyAutomotiveDrop']">
+<lootgroup name="SupplyGeneric" count="all">
+<item group="SupplyGenericClothes"/>
+<item group="cannedfood" count="1,4"/>
+</lootgroup>
+</insertAfter>
+<!--Canned goods and reading material-->
+<!--Must be after Generic Supply bc it uses it-->
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyGeneric']">
+<lootgroup name="SupplySchematicsBooksDrop" count="all">
+<item group="SupplySchematics"/>
+<item group="SupplyPerkBooks"/>
+<item group="cannedfood" count="1,4"/>
+</lootgroup>
+</insertAfter>
+<!--Primary Supply -->
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplySchematicsBooksDrop']">
+<lootgroup name="SupplyGroups" count="1">
+<item group="SupplyFoodDrop"/>
+<item group="SupplyMedicalDrop"/>
+<item group="SupplyWeaponsArmorDrop"/>
+<item group="SupplyMaterialsToolsDrop"/>
+<item group="SupplyAmmoDrop"/>
+<item group="SupplySchematicsBooksDrop"/>
+<item group="SupplyAutomotiveDrop"/>
+</lootgroup>
+</insertAfter>
+<!--Picks a Supply Group and Generic drops-->
+<insertAfter xpath="lootcontainers/lootgroup[@name='SupplyGroups']">
+<lootgroup name="SupplyCrate" count="all">
+<item group="SupplyGeneric"/>
+<item group="SupplyGroups"/>
+</lootgroup>
+</insertAfter>
+<append xpath="/lootcontainers/lootcontainer[@id='34']">
+<item group="SupplyCrate" />
+</append>
+<remove xpath="/lootcontainers/lootcontainer[@id='34']/item[@group='groupAirDrop']" />
+</loot>
